@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>seat-selection</title>
+    <link rel="stylesheet" href="movie.css">
+</head>
+<body>
+    <h1>Seat selection</h1>
+
+    <div class="seat-layout">
+        <div class="row">
+            <div class="seat-available"></div>
+            <div class="seat-available"></div>
+            <div class="seat"></div>
+            <div class="seat-available"></div>
+            <div class="seat-available"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat-available"></div>
+            <div class="seat-available"></div>
+            <div class="seat"></div>
+            <div class="seat-available"></div>
+            <div class="seat-available"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat-available"></div>
+            <div class="seat-available"></div>
+            <div class="seat"></div>
+            <div class="seat-available"></div>
+            <div class="seat-available"></div>
+        </div>
+    </div>
+    <form action="movie_bookingconfirm.html" method="post">
+        <label for="selectedseats">Selected Seats:</label>
+        <input type="text" name="selectedseats" id="selectedseats" required readonly>
+        <br>
+        <button type="submit">Confirm Booking</button>
+        <button type="button" onclick="history.backk()">Go Back</button>
+
+        <a href="movie_home.html" class="btn">Return to home</a>
+        
+    </form>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Form</title>
+    <link rel="stylesheet" href="movie.css">
+    
+</head>
+<body>
+    <h1 id="form">Signup Form</h1>
+    <form id="signupForm" onsubmit="validateForm(event)">
+        <div>
+            <label for="regId">Registration ID*</label>
+            <input type="text" id="regId" name="regId" placeholder="Enter Registration ID" required>
+        </div>
+        <div>
+            <label for="username">Username*</label>
+            <input type="text" id="username" name="username" placeholder="Enter Username" required>
+        </div>
+        <div>
+            <label for="password">Password*</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+        </div>
+        <div>
+            <label for="email">Email*</label>
+            <input type="email" id="email" name="email" placeholder="Enter Email" required>
+        </div>
+        <div>
+            <label for="mobile">Mobile Number*</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter Mobile Number" required>
+        </div>
+        <div>
+            <label for="dob">Date of Birth*</label>
+            <input type="text" id="dob" name="dob" placeholder="Enter DOB (DDMMYYYY)" required>
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Cancel">
+            <a href="movie_home.html" class="btn">Return to home</a>
+        </div>
+    </form>
+
+    
