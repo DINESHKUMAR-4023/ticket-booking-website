@@ -55,7 +55,7 @@ form {
     text-align: center;
 }
 
-input[type="submit"], input[type="reset"]{
+button[type="submit"], button[type="reset"]{
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
@@ -65,7 +65,7 @@ input[type="submit"], input[type="reset"]{
     cursor: pointer;
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover {
+button[type="submit"]:hover, button[type="reset"]:hover {
     background-color: #555;
 }
 
@@ -101,42 +101,311 @@ h1{
 .movie h2{
     text-align: center;
 }
-.movie a{
-    display: inline-block;
+
+  
+  .available {
+    background-color: green;
+  }
+  
+  .booked {
+    background-color: blue;
+  }
+  
+form{
+    margin-top: 20px;
+}
+
+
+.movie-container {
+
+    margin: 20px 0;
+  
+  }
+  
+   
+  
+  .movie-container select {
+  
+    background-color: #fff;
+  
+    border: 0;
+  
+    border-radius: 5px;
+  
+    font-size: 14px;
+  
+    margin-left: 10px;
+  
+    padding: 5px 15px 5px 15px;
+  
+    -moz-appearance: none;
+  
+    -webkit-appearance: none;
+  
+    appearance: none;
+  
+  }
+  
+   
+  
+  .container {
+  
+    perspective: 1000px;
+  
+    margin-bottom: 30px;
+  
+  }
+  
+   
+  
+  .seat {
+  
+    background-color: #20f309;
+  
+    height: 12px;
+  
+    width: 15px;
+  
+    margin: 3px;
+  
+    border-top-left-radius: 10px;
+  
+    border-top-right-radius: 10px;
+  
+  }
+  
+   
+  
+  .seat.selected {
+  
+    background-color: #f8dc09;
+  
+  }
+  
+   
+  
+  .seat.occupied {
+  
+    background-color: #4515f1;
+  
+  }
+  
+   
+  
+  .seat:nth-of-type(2) {
+  
+    margin-right: 18px;
+  
+  }
+  
+   
+  
+  .seat:nth-last-of-type(2) {
+  
+    margin-left: 18px;
+  
+  }
+  
+   
+  
+  .seat:not(.occupied):hover {
+  
+    cursor: pointer;
+  
+    transform: scale(1.2);
+  
+  }
+  
+   
+  
+  .showcase .seat:not(.occupied):hover {
+  
+    cursor: default;
+  
+    transform: scale(1);
+  
+  }
+  
+   
+  
+  .showcase {
+  
+    background-color: rgba(0, 0, 0, 0.1);
+  
+    padding: 5px 10px;
+  
+    border-radius: 5px;
+  
+    color: black;
+  
+    list-style-type: none;
+  
+    display: flex;
+  
+    justify-content: space-between;
+  
+  }
+  
+   
+  
+  .showcase li {
+  
+    display: flex;
+  
+    align-items: center;
+  
+    justify-content: center;
+  
+    margin: 0 10px;
+  
+  }
+  
+   
+  
+  .showcase li small {
+  
+    margin-left: 10px;
+  
+  }
+  
+   
+  
+  .row {
+  
+    display: flex;
+  
+  }
+  
+   
+  
+  
+  
+   
+  
+  p.text {
+  
+    margin: 5px 0;
+  
+  }
+  
+   
+  
+  p.text span {
+  
+    color: red;
+    text-decoration: underline;
+  
+  }
+  
+   
+  
+  #submit{
+  
+    width: 100%;
+  
+    text-align: center;
+  
+  }
+  
+  #submit button{
+  
+    
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
     border-radius: 4px;
-    left: 25%;
-    position: relative;
-    /* transform: translateY(50%); */    
-}
-
-.seat{
-    background-color: #978e8e;
-    width: 20px;
-    height: 20px;
-    border-radius: 10px;
-}
-.seat-layout{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-.row{
-    display: flex;
-    gap: 10px;
-}
-.seat-available{
-    background-color: greenyellow;
-    cursor: pointer;
-    height: 20px;
-    width: 20px;
-}
-.seatselected{
-    background-color: green;
-}
-form{
-    margin-top: 20px;
-}
+    margin-right: 10px;
+    
+  
+  }
+  
+  #submit button a{
+  
+  color: #eee8e8;
+  
+  text-decoration: none;
+  
+  }
+  
+  #submit button:hover{
+   background-color: grey;
+   color: black;
+  
+  }
+  
+  #submit button:active{
+  
+    font-size: 19px;
+  
+    background-color: rgb(46, 20, 5) !important;
+  
+    color: #fff !important;
+  
+  }
+  
+   
+  
+  #submit1{
+  
+    width: 100%;
+  
+    text-align: center;
+  
+  }
+  
+  #submit1 button{
+  
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-right: 10px;
+  
+  }
+  
+  #submit1 button a{
+  
+  color: #eee8e8;
+  
+  text-decoration: none;
+  
+  }
+  
+  #submit1 button:hover{
+  
+    background-color: grey;
+    color: black;
+  
+  }
+  
+  #submit1 button:active{
+  
+    font-size: 19px;
+  
+    background-color: rgb(46, 20, 5) !important;
+  
+    color: #fff !important;
+  
+  }
+  
+  #timer {
+  
+    font-size: 24px;
+  
+    font-weight: bold;
+  
+    text-align: center;
+  
+    margin: 20px auto;
+  
+    padding: 10px;
+  
+    border: 2px solid grey;
+  
+    width: 200px;
+  
+    color: rgb(250, 246, 246);
+  
+  }
